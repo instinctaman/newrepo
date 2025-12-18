@@ -4,17 +4,17 @@ import $ from "jquery";
 export function initLegacyScripts() {
   /* ---------------- POPUP FUNCTIONS ---------------- */
 
-  function openPopup(popup) {
-    if (!popup) return;
-    $(popup).show().attr("aria-hidden", "false");
-    $("#closePopup")?.focus();
-  }
+  // function openPopup(popup) {
+  //   if (!popup) return;
+  //   $(popup).show().attr("aria-hidden", "false");
+  //   $("#closePopup")?.focus();
+  // }
 
-  function closePopup(popup) {
-    if (!popup) return;
-    $(popup).hide().attr("aria-hidden", "true");
-    $("#openMyPopup")?.focus();
-  }
+  // function closePopup(popup) {
+  //   if (!popup) return;
+  //   $(popup).hide().attr("aria-hidden", "true");
+  //   $("#openMyPopup")?.focus();
+  // }
 
   /* ---------------- MODAL LOGIC ---------------- */
 
