@@ -1,7 +1,6 @@
 import $ from "jquery";
 
 export function headerScript() {
-  "use strict";
 
   /* ---------- Responsive navbar animation ---------- */
 

@@ -134,7 +134,7 @@ export function popupscript() {
        * inside the modal and have it close.
        */
 
-      if (isOpen && target.classList.contains('modal__bg') || target.classList.contains('modal__close')) {
+      if ((isOpen && target.classList.contains('modal__bg')) || target.classList.contains('modal__close')) {
 
         // make the hidden div visible again and remove the transforms so it scales back to its original size
         div.style.opacity = '1';
