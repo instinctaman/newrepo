@@ -1,27 +1,14 @@
 
+import { initInputFocus } from "./assets/js/call";
+import { useEffect } from "react";
 function Contact() {
-  const inputs = document.querySelectorAll(".input");
-
-    function focusFunc() {
-      let parent = this.parentNode;
-      parent.classList.add("focus");
-    }
-
-    function blurFunc() {
-      let parent = this.parentNode;
-      if (this.value === "") {
-        parent.classList.remove("focus");
-      }
-    }
-
-    inputs.forEach((input) => {
-      input.addEventListener("focus", focusFunc);
-      input.addEventListener("blur", blurFunc);
-    });
+  useEffect(() => {
+    const cleanup = initInputFocus();
+    return cleanup;
+  }, []);
   const styles = {
     main: {
         marginTop: '120px',
-        textAlign: 'center',
         overflowX: 'hidden',
         color: '#fff',
     },
@@ -93,25 +80,25 @@ function Contact() {
 
           <div className="input-container">
             <input type="text" name="name" className="input" required />
-            <label for="">Username</label>
+            <label>Username</label>
             <span>Username</span>
           </div>
 
           <div className="input-container">
             <input type="email" name="email" className="input" required />
-            <label for="">Email</label>
+            <label>Email</label>
             <span>Email</span>
           </div>
 
           <div className="input-container">
             <input type="tel" name="phone" className="input" required />
-            <label for="">Phone</label>
+            <label>Phone</label>
             <span>Phone</span>
           </div>
 
           <div className="input-container textarea">
             <textarea name="message" className="input" required></textarea>
-            <label for="">Message</label>
+            <label>Message</label>
             <span>Message</span>
           </div>
 

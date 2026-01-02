@@ -45,7 +45,7 @@ function App() {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                <div className="hori-selector" style={{ marginTop: '10px' }}>
+                <div className="hori-selector">
                   <div className="left"></div>
                   <div className="right"></div>
                 </div>
@@ -66,9 +66,6 @@ function App() {
                 <li className="nav-item">
                   <Link to={"/contact"} className="nav-link"><i className="far fa-chart-bar"></i> Contact Me</Link>
                 </li>
-                {/* <li className="nav-item">
-                  <a className="nav-link" href="#"><i className="far fa-copy"></i> Documents</a>
-                </li>  */}
               </ul>
               <form className="d-flex ms-3" role="search" id="navbarSearchForm">
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"
@@ -96,23 +93,12 @@ function App() {
           <div className="footer-content">
             <div className="footer-content-column">
               <div className="footer-logo">
-                <a className="footer-logo-link" href="/">
+                <Link className="footer-logo-link" to="/">
                   <span className="link-text"><img src={logo} alt="" /></span>
-                </a>
+                </Link>
               </div>
               <div className="footer-menu">
                 <h2 className="footer-menu-name"> Get Started</h2>
-                {/* <ul id="menu-get-started" className="footer-menu-list">
-                <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                  <a href="#">Start</a>
-                </li>
-                <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                  <a href="#">Documentation</a>
-                </li>
-                <li className="menu-item menu-item-type-post_type menu-item-object-product">
-                  <a href="#">Installation</a>
-                </li>
-              </ul>  */}
               </div>
             </div>
             <div className="footer-content-column">
@@ -120,14 +106,17 @@ function App() {
                 <h2 className="footer-menu-name"> Company</h2>
                 <ul id="menu-company" className="footer-menu-list">
                   <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a href="Contact.html">Contact</a>
+                    <Link
+                      to="/contact"
+                      onClick={() => {
+                        setTimeout(() => {
+                          window.dispatchEvent(new Event("popstate"));
+                        }, 0);
+                      }}
+                    >
+                      Contact
+                    </Link>
                   </li>
-                  {/* <!-- <li className="menu-item menu-item-type-taxonomy menu-item-object-category">
-                  <a href="#">News</a>
-                </li>
-                <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="#">Careers</a>
-                </li> --> */}
                 </ul>
               </div>
               <div className="footer-menu">
@@ -148,16 +137,52 @@ function App() {
                 <h2 className="footer-menu-name"> Quick Links</h2>
                 <ul id="menu-quick-links" className="footer-menu-list">
                   <li className="menu-item menu-item-type-custom menu-item-object-custom">
-                    <a target="_blank" rel="noopener noreferrer" href="index.html">Home</a>
+                    <Link
+                      to="/"
+                      onClick={() => {
+                        setTimeout(() => {
+                          window.dispatchEvent(new Event("popstate"));
+                        }, 0);
+                      }}
+                    >
+                      Home
+                    </Link>
                   </li>
                   <li className="menu-item menu-item-type-custom menu-item-object-custom">
-                    <a target="_blank" rel="noopener noreferrer" href="about.html">About</a>
+                    <Link
+                      to="/about"
+                      onClick={() => {
+                        setTimeout(() => {
+                          window.dispatchEvent(new Event("popstate"));
+                        }, 0);
+                      }}
+                    >
+                      About
+                    </Link>
                   </li>
                   <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a href="project.html">Projects</a>
+                    <Link
+                      to="/projects"
+                      onClick={() => {
+                        setTimeout(() => {
+                          window.dispatchEvent(new Event("popstate"));
+                        }, 0);
+                      }}
+                    >
+                      Projects
+                    </Link>
                   </li>
                   <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a href="services.html">Services</a>
+                    <Link
+                      to="/services"
+                      onClick={() => {
+                        setTimeout(() => {
+                          window.dispatchEvent(new Event("popstate"));
+                        }, 0);
+                      }}
+                    >
+                      Services
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -166,7 +191,17 @@ function App() {
               <div className="footer-call-to-action">
                 <h2 className="footer-call-to-action-title"> Let's Chat</h2>
                 <p className="footer-call-to-action-description"> Have a support question?</p>
-                <a className="footer-call-to-action-button button" href="Contact.html" target="_self"> Get in Touch </a>
+                <Link
+                  className="footer-call-to-action-button button"
+                  to="/contact"
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.dispatchEvent(new Event("popstate"));
+                    }, 0);
+                  }}
+                >
+                  Get in Touch
+                </Link>
               </div>
               <div className="footer-call-to-action">
                 <h2 className="footer-call-to-action-title"> You Can Call Me</h2>

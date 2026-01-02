@@ -2,9 +2,7 @@ import $ from "jquery";
 
 export function headerScript() {
 
-  /* ---------- Responsive navbar animation ---------- */
-
-  function test() {
+  function runTest() {
     const $tabs = $("#navbarSupportedContent");
     const $activeItem = $tabs.find(".active");
 
@@ -22,52 +20,53 @@ export function headerScript() {
     });
   }
 
-  /* ---------- Initial run ---------- */
-  setTimeout(test, 0);
+  /* ---------- URL-based active menu ---------- */
+  function syncActiveWithURL() {
+    const path = window.location.pathname || "/";
 
-  /* ---------- Click animation ---------- */
+    $("#navbarSupportedContent ul li").removeClass("active");
+
+    const $target = $(
+      `#navbarSupportedContent ul li a[href="${path}"]`
+    );
+
+    if ($target.length) {
+      $target.parent().addClass("active");
+    } else {
+      $('#navbarSupportedContent ul li a[href="/"]').parent().addClass("active");
+    }
+
+    setTimeout(runTest, 0);
+  }
+
+  /* ---------- INITIAL RUN ---------- */
+  syncActiveWithURL();
+
+  /* ---------- CLICK (HEADER) ---------- */
   $("#navbarSupportedContent").on("click", "li", function () {
     $("#navbarSupportedContent ul li").removeClass("active");
     $(this).addClass("active");
-
-    const height = $(this).innerHeight();
-    const width = $(this).innerWidth();
-    const position = $(this).position();
-
-    $(".hori-selector").css({
-      top: position.top + "px",
-      left: position.left + "px",
-      height: height + "px",
-      width: width + "px",
-    });
+    setTimeout(runTest, 0);
   });
 
-  /* ---------- Window resize ---------- */
-  const handleResize = () => {
-    setTimeout(test, 500);
-  };
+  /* ---------- LISTEN TO FOOTER / ROUTE CHANGES ---------- */
+  window.addEventListener("popstate", syncActiveWithURL);
+
+  /* ---------- Resize ---------- */
+  const handleResize = () => setTimeout(runTest, 500);
   $(window).on("resize", handleResize);
 
-  /* ---------- Navbar toggle ---------- */
-  $(".navbar-toggler").on("click", function () {
-    $(".navbar-collapse").slideToggle(300);
-    setTimeout(test, 300);
-  });
+  /* ---------- Bootstrap collapse ---------- */
+  $("#navbarSupportedContent")
+    .on("shown.bs.collapse hidden.bs.collapse", function () {
+      setTimeout(runTest, 100);
+    });
 
-  /* ---------- Active menu based on URL ---------- */
-  const path = window.location.pathname.split("/").pop() || "index.html";
-  const target = $(
-    `#navbarSupportedContent ul li a[href="${path}"]`
-  );
-
-  if (target.length) {
-    target.parent().addClass("active");
-  }
-
-  /* ---------- CLEANUP (VERY IMPORTANT) ---------- */
+  /* ---------- CLEANUP ---------- */
   return () => {
     $("#navbarSupportedContent").off("click", "li");
     $(window).off("resize", handleResize);
-    $(".navbar-toggler").off("click");
+    $("#navbarSupportedContent").off("shown.bs.collapse hidden.bs.collapse");
+    window.removeEventListener("popstate", syncActiveWithURL);
   };
 }
