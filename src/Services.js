@@ -1,7 +1,7 @@
-import w_dev from './assets/img/Services/Web Development1.jpg';
-import app_design from './assets/img/Services/App design.webp';
-import ux_ui from './assets/img/Services/ux_ui_design.webp';
-import consulting from './assets/img/Services/Consulting-768x384.png';
+import w_dev from './assets/img/Services/web.jpg';
+import app_design from './assets/img/Services/app.jpg';
+import ux_ui from './assets/img/Services/ui_ux.jpg';
+import consulting from './assets/img/Services/consult.jpg';
 function Services() {
   const styles = {
     main: {

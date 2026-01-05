@@ -35,7 +35,7 @@ function About() {
               </div>
               <div className="col-lg-12 p-3">
                 <div className="row">
-                  <div className="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
                         <div className="progress" data-progress="90">
@@ -45,7 +45,7 @@ function About() {
                       <span className="title">HTML</span>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
                         <div className="progress" data-progress="80">
@@ -55,7 +55,7 @@ function About() {
                       <span className="title">CSS</span>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
                         <div className="progress" data-progress="65">
@@ -65,7 +65,7 @@ function About() {
                       <span className="title">Javascript</span>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
                         <div className="progress" data-progress="50">
@@ -75,7 +75,7 @@ function About() {
                       <span className="title">React</span>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
                         <div className="progress" data-progress="65">
@@ -85,7 +85,7 @@ function About() {
                       <span className="title">MySQL</span>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
                         <div className="progress" data-progress="50">
@@ -95,7 +95,7 @@ function About() {
                       <span className="title">Pyhton</span>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
                         <div className="progress" data-progress="80">
@@ -117,12 +117,7 @@ function About() {
               </div>
             </div>
           </div>
-
-
-
-
         </div>
-
       </main>
     </>
   )

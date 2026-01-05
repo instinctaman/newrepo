@@ -3,10 +3,10 @@ import { initLegacyScripts } from "./assets/js/script.js";
 import confrence_iimt from './assets/img/Experience/Confrence_IIMT.jpeg';
 import conference_trinity from './assets/img/Experience/Conference_Trinity.jpeg';
 import online_inter from './assets/img/Experience/Online_inter.png';
-import copy from './assets/img/bg-slider-1-copy.jpg';
-import copy1 from './assets/img/bg-slider-1-copy.jpg';
+import copy from './assets/img/bg-slider-1.jpg';
+import copy1 from './assets/img/bg-slider-2.jpg';
 import './assets/css/popup.css';
-import copy3 from './assets/img/bg-slider-3-copy.jpg';
+import copy3 from './assets/img/bg-slider-3.jpg';
 import myimage from './assets/img/MyImage.jpeg'
 import { useEffect } from "react";
 import { popupscript } from './assets/js/popup.js';

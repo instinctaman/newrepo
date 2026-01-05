@@ -19,7 +19,7 @@ function Contact() {
     {/* <!-- <span className="big-circle1"></span> -->
     <!-- <img src="img/shape.png" className="square" alt="" /> --> */}
     <div className="form">
-      <div className="contact-info">
+      <div className="contact-infoes">
         <h3 className="titles">Let's get in touch</h3>
         {/* <!-- <p className="text">
           I can ask me anything.

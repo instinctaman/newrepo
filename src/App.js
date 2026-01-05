@@ -2,7 +2,7 @@ import { initLegacyScripts } from "./assets/js/script.js";
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import logo from './assets/img/image-modified.png';
-import videoSrc from './assets/video/bg-video02.mp4';
+// import videoSrc from './assets/video/bg-video02.mp4';
 import './assets/css/contact.css';
 import './assets/css/bootstrap.css';
 import './assets/css/card_style.css';
@@ -14,6 +14,8 @@ import About from './About';
 import Contact from './Contact';
 import Services from './Services';
 import Projects from './Projects';
+import Privacy from "./Privacy.js"; 
+import Terms from "./Terms.js";
 import { useEffect } from "react";
 import { headerScript } from "./assets/js/header.js";
 function App() {
@@ -28,10 +30,6 @@ function App() {
   }, []);
   return (
     <Router>
-      <video id="bg-video" autoplay muted loop playsinline>
-        <source src={videoSrc} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
       <header id="navbar">
         <nav className="navbar navbar-expand-lg navbar-mainbg">
           <div className="container-fluid justify-content-evenly">
@@ -82,6 +80,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
       </Routes>
       <div className="pg-footer">
         <footer className="footer">
@@ -124,10 +124,20 @@ function App() {
                 <ul id="menu-legal" className="footer-menu-list">
                   <li
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
-                    <a href="privacy.html">Privacy Notice</a>
+                      <Link
+                      to="/privacy"
+                    >
+                      Privacy Notice
+                    </Link>
+                    {/* <a href="privacy.html">Privacy Notice</a> */}
                   </li>
                   <li className="menu-item menu-item-type-post_type menu-item-object-page">
-                    <a href="terms.html">Terms of Use</a>
+                     <Link
+                      to="/terms"
+                    >
+                      Terms of Use
+                    </Link>
+                    {/* <a href="terms.html">Terms of Use</a> */}
                   </li>
                 </ul>
               </div>

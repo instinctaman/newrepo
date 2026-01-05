@@ -185,12 +185,12 @@ textarea.input {
   opacity: 1;
 }
 
-.contact-info {
+.contact-infoes {
   padding: 2.3rem 2.2rem;
   position: relative;
 }
 
-.contact-info .titles {
+.contact-infoes .titles {
   color: #1abc9c;
 }
 
@@ -246,7 +246,7 @@ textarea.input {
   transform: scale(1.05);
 }
 
-.contact-info:before {
+.contact-infoes:before {
   content: "";
   position: absolute;
   width: 110px;
@@ -317,7 +317,7 @@ textarea.input {
     grid-template-columns: 1fr;
   }
 
-  .contact-info:before {
+  .contact-infoes:before {
     bottom: initial;
     top: -75px;
     right: 65px;
@@ -361,7 +361,7 @@ textarea.input {
     padding: 1.5rem;
   }
 
-  .contact-info:before {
+  .contact-infoes:before {
     display: none;
   }
 
@@ -372,7 +372,7 @@ textarea.input {
   }
 
   .mailform,
-  .contact-info {
+  .contact-infoes {
     /* max-width: ; */
     padding: 1.7rem 1.6rem;
   }
