@@ -182,7 +182,7 @@ function Home() {
                                     <div className="col-lg-6">
                                         <img className="responsive-lg" src={online_inter} alt="" />
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="col-lg-6 m-auto">
                                         <h2 id="popupTitle" className="Sajao">Online Internship</h2>
                                         <p id="popupText" className="manage_gap">Successfully completed a 4-week Web Development
                                             internship at ELiteTech
@@ -214,7 +214,7 @@ function Home() {
                                     <div className="col-lg-6">
                                         <img className="responsive-lg" src={online_inter} alt="" />
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="col-lg-6 m-auto">
                                         <h2 id="popupTitle" className="Sajao">Offline Internship</h2>
                                         <p id="popupText" className="manage_gap">Completed a 3-month offline internship in Web Development at
                                             Innoweb

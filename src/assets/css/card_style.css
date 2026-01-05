@@ -80,7 +80,7 @@
 }
 
 .card:nth-child(2):before {
-    background-image: url('../img/Experience/Conference.jpeg');
+    background-image: url('../img/Experience/Conference.jpg');
 }
 
 .card:nth-child(3):before {
@@ -90,7 +90,7 @@
 }
 
 .card:nth-child(4):before {
-    background-image: url('../img/Experience/Offline_intern.jpeg');
+    background-image: url('../img/Experience/Offline_intern.jpg');
 }
 
 .content {
