@@ -1,5 +1,6 @@
 
 import logo from './assets/img/image-modified.png';
+import heroImg from './assets/img/MyImage.jpeg'
 import { useEffect } from 'react';
 import { progressScript } from './assets/js/progress_bar.js';
 import './assets/css/style.css';
@@ -16,23 +17,35 @@ function About() {
             <div className="border">
               <img src={logo} alt="" />
             </div>
-          </div>
+          </div>  
         </div>
         <div className="attach">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-lg-12">
-                <div className="about-me">
-                  <h2>About Me</h2>
-                  <p>Hello! I'm Aman Kumar Gautam, a passionate web developer with a knack for creating dynamic and
-                    responsive
-                    websites. I love coding and enjoy the challenge of solving complex problems.</p>
-                  <p>With a background in computer science, I have honed my skills in HTML, CSS, JavaScript, and various
-                    frameworks. I am always eager to learn new technologies and improve my craft.</p>
-                  <p>In my free time, I enjoy exploring new programming languages, contributing to open-source projects, and
-                    sharing my knowledge with others.</p>
+              <div className="row about-me">
+                <div className="col-lg-4 d-flex justify-content-center align-items-center">
+                  <img
+                    src={heroImg}
+                    alt="Hero"
+                    className="float-animation border-radius-25"
+                    style={{ width: "300px" }}
+                  />
+
+                </div>
+                <div className="col-lg-8 m-auto">
+                  <div className="">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Aman Kumar Gautam, a passionate web developer with a knack for creating dynamic and
+                      responsive
+                      websites. I love coding and enjoy the challenge of solving complex problems.</p>
+                    <p>With a background in computer science, I have honed my skills in HTML, CSS, JavaScript, and various
+                      frameworks. I am always eager to learn new technologies and improve my craft.</p>
+                    <p>In my free time, I enjoy exploring new programming languages, contributing to open-source projects, and
+                      sharing my knowledge with others.</p>
+                  </div>
                 </div>
               </div>
+
               <div className="col-lg-12 p-3">
                 <div className="row">
                   <div className="mud-30 col-lg-3 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
