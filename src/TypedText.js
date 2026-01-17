@@ -8,8 +8,9 @@ function TypedText() {
   useEffect(() => {
     typed.current = new Typed(el.current, {
       strings: [
-        "Web Developer.",
-        "App Designer.",
+        "Full Stack Developer.",
+        "Frontend Designer.",
+        "Backend Designer.",
         "UI/UX Enthusiast.",
         "Consultant.",
       ],
