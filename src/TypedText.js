@@ -10,7 +10,7 @@ function TypedText() {
       strings: [
         "Full Stack Developer.",
         "Frontend Designer.",
-        "Backend Designer.",
+        "Backend Developer.",
         "UI/UX Enthusiast.",
         "Consultant.",
       ],
