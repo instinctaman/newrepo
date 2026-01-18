@@ -1,5 +1,3 @@
-
-import logo from './assets/img/image-modified.png';
 import heroImg from './assets/img/MyImage.jpeg'
 import { useEffect } from 'react';
 import { progressScript } from './assets/js/progress_bar.js';
