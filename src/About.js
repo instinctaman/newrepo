@@ -12,12 +12,12 @@ function About() {
   return (
     <>
       <main>
-        <div className="top">
-          <div className="border_back">
+        <div className="tops">
+          {/* <div className="border_back">
             <div className="border">
               <img src={logo} alt="" />
             </div>
-          </div>  
+          </div>   */}
         </div>
         <div className="attach">
           <div className="container-fluid">
@@ -48,17 +48,20 @@ function About() {
 
               <div className="col-lg-12 p-3">
                 <div className="row">
-                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                  <div className="col-12">
+                    <h2>My Skills</h2>
+                  </div>
+                  <div className="mud-30 col-lg-2 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
-                        <div className="progress" data-progress="90">
+                        <div className="progress" data-progress="95">
                           <span className="progress-number">0%</span>
                         </div>
                       </div>
                       <span className="title">HTML</span>
                     </div>
                   </div>
-                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-2 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
                         <div className="progress" data-progress="80">
@@ -68,7 +71,7 @@ function About() {
                       <span className="title">CSS</span>
                     </div>
                   </div>
-                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-2 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill m-auto">
                         <div className="progress" data-progress="65">
@@ -78,17 +81,17 @@ function About() {
                       <span className="title">Javascript</span>
                     </div>
                   </div>
-                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-2 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
                         <div className="progress" data-progress="50">
                           <span className="progress-number">0%</span>
                         </div>
                       </div>
-                      <span className="title">React</span>
+                      <span className="title">React.js</span>
                     </div>
                   </div>
-                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-2 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
                         <div className="progress" data-progress="65">
@@ -98,17 +101,27 @@ function About() {
                       <span className="title">MySQL</span>
                     </div>
                   </div>
-                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-2 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
                         <div className="progress" data-progress="50">
                           <span className="progress-number">0%</span>
                         </div>
                       </div>
-                      <span className="title">Pyhton</span>
+                      <span className="title">Python</span>
                     </div>
                   </div>
-                  <div className="mud-30 col-lg-3 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                  <div className="mud-30 col-lg-2 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <div className="parent-skill">
+                      <div className="skill">
+                        <div className="progress" data-progress="70">
+                          <span className="progress-number">0%</span>
+                        </div>
+                      </div>
+                      <span className="title">Java</span>
+                    </div>
+                  </div>
+                  <div className="mud-30 col-lg-2 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
                     <div className="parent-skill">
                       <div className="skill">
                         <div className="progress" data-progress="80">

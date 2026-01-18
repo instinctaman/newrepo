@@ -8,7 +8,7 @@ export function progressScript() {
     if (!progress.length) return;
 
     let count = 0;
-    const MAX = 80;
+    const MAX = 99;
 
     const run = setInterval(() => {
       count++;
